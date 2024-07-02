@@ -90,7 +90,6 @@ The `ShareLinkButton` in SwiftUI allows developers to customize the sharing expe
 ```swift
 import UIKit
 
-// Step 1: Create a Custom UIActivityItemSource
 class CustomItemSource: NSObject, UIActivityItemSource {
     let text: String
     let url: URL
@@ -121,15 +120,16 @@ class CustomItemSource: NSObject, UIActivityItemSource {
     }
 }
 ```
-```swift
-// Step 2: Create an instance of the custom activity item source
-        let source = CustomItemSource(
-            text: "Check out this amazing website!",
-            url: URL(string: "https://www.example.com")!
-        )
 
-// Step 3: Use the custom activity item source in ShareLink
-ShareLink(item: source) {
+2. **Use the custom activity item source in ShareLinkButton**
+   
+```swift
+let source = CustomItemSource(
+    text: "Check out this amazing website!",
+    url: URL(string: "https://www.example.com")!
+)
+
+ShareLinkButton(item: source) {
     Label("Share", systemImage: "square.and.arrow.up")
 }
 ```
