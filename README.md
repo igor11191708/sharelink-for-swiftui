@@ -66,12 +66,11 @@ ShareLinkButton(item: URL(string: "https://example.com")!, icon: UIImage(systemN
 
 ### Sharing CLLocation
 ```swift
-let location = CLLocation(latitude: 37.7749, longitude: -122.4194) // Example coordinates for San Francisco
+let location = CLLocation(latitude: 37.7749, longitude: -122.4194) // Coordinates for San Francisco
 
 // Create a ShareLinkButton using the defined location.
 ShareLinkButton(item: location, label: {
-    Text("Share Location")  // This is the label for the button.
-})}
+    Text("San Francisco location")  
 })
 ```
 
