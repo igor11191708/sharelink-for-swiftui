@@ -8,9 +8,9 @@
 import UIKit
 
 /// Builder class for creating `NSAttributedString` with custom attributes.
-class AttributedStringBuilder {
+final class AttributedStringBuilder {
     
-    // Private variables for attributes
+    /// Private variables for attributes
     private var font: UIFont = UIFont.systemFont(ofSize: 12)
     private var foregroundColor: UIColor = .black
     

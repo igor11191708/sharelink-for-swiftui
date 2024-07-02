@@ -30,6 +30,8 @@ final class TransportableItemBuilder<T: Transportable> {
         self.item = item
     }
     
+    // MARK: - API
+    
     /// Sets the title for the item.
     ///
     /// - Parameter title: An optional title for the item.
@@ -64,6 +66,8 @@ final class TransportableItemBuilder<T: Transportable> {
         return createTransportableItem()
             + createPrintFormatterIfNeeded()
     }
+    
+    // MARK: - Private
     
     /// Creates the transportable item based on its type.
     ///
@@ -107,6 +111,8 @@ final class TransportableItemBuilder<T: Transportable> {
         }
     }
 }
+
+// MARK: - Fileprivate
 
 /// Resolves the title for the item if it is not provided.
 ///

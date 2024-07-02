@@ -8,7 +8,7 @@
 import UIKit
 
 /// A custom `UIActivityViewController` subclass that customizes the presentation of the activity sheet.
-class ActivitySheetController: UIActivityViewController {
+final class ActivitySheetController: UIActivityViewController {
 
     deinit {
         #if DEBUG

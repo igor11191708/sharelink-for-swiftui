@@ -8,18 +8,23 @@ import UIKit
 import CoreLocation
 
 /// Protocol `Transportable` inherits `CustomStringConvertible` for providing textual descriptions of objects.
+/// This protocol and its extensions are available only on iOS and available since iOS 14.
+@available(iOS 14.0, *)
 public protocol Transportable: CustomStringConvertible {}
 
+@available(iOS 14.0, *)
 extension String: Transportable {
     /// The description of a string is the string itself.
     public var description: String { self }
 }
 
+@available(iOS 14.0, *)
 extension URL: Transportable {
     /// The description of a URL is its absolute string representation.
     public var description: String { self.absoluteString }
 }
 
+@available(iOS 14.0, *)
 extension UIImage: Transportable {
     /// Property to extract the named parameter from the image description.
     var namedParameter: String? {
@@ -39,6 +44,7 @@ extension UIImage: Transportable {
     }
 }
 
+@available(iOS 14.0, *)
 extension Data: Transportable {
     /// The description of data is its string representation, or "Data object" if conversion fails.
     public var description: String {
@@ -46,6 +52,8 @@ extension Data: Transportable {
     }
 }
 
+@available(iOS 14.0, *)
 extension NSAttributedString: Transportable {}
 
+@available(iOS 14.0, *)
 extension CLLocation: Transportable {}

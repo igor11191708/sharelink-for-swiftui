@@ -34,7 +34,7 @@ final class TransportableItem<T: Transportable>: NSObject, UIActivityItemSource 
     ///
     /// - Parameter activityViewController: The `UIActivityViewController` requesting the placeholder item.
     /// - Returns: The item to be shared.
-    func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
+    public func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
         return item
     }
 
@@ -44,7 +44,7 @@ final class TransportableItem<T: Transportable>: NSObject, UIActivityItemSource 
     ///   - activityViewController: The `UIActivityViewController` requesting the item.
     ///   - activityType: The type of activity requesting the item.
     /// - Returns: The item to be shared.
-    func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
+    public func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
         return item
     }
     
@@ -52,7 +52,7 @@ final class TransportableItem<T: Transportable>: NSObject, UIActivityItemSource 
     ///
     /// - Parameter activityViewController: The `UIActivityViewController` requesting the metadata.
     /// - Returns: The `LPLinkMetadata` object containing metadata about the item.
-    func activityViewControllerLinkMetadata(_ activityViewController: UIActivityViewController) -> LPLinkMetadata? {
+    public func activityViewControllerLinkMetadata(_ activityViewController: UIActivityViewController) -> LPLinkMetadata? {
         let metadata = LPLinkMetadata()
         
         // Set icon if available
