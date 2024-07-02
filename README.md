@@ -78,5 +78,41 @@ ShareLinkButton(item: URL(string: "https://example.com")!, icon: UIImage(systemN
 ## Customization
 The button appearance can be customized via the label closure, allowing integration with the design system of the host application. Additionally, developers can specify custom activities or exclude certain activity types to tailor the sharing experience to the app's needs.
 
+## Customizing the ShareLinkButton with UIActivityItemSource
+
+The `ShareLinkButton` in SwiftUI allows developers to customize the sharing experience by providing their own `UIActivityItemSource`. This interface enables precise control over the data shared and its format, depending on the activity type selected by the user. By integrating a custom `UIActivityItemSource` into the `ShareLinkButton`, developers can tailor the content and presentation of shared data across various platforms.
+
+### Example: Customizing Share Content Based on Activity Type
+
+1. **Define a Custom `UIActivityItemSource`**:
+   Begin by creating a class that conforms to the `UIActivityItemSource` protocol. This class will specify the data to be shared when the share sheet is activated.
+
+```swift
+import UIKit
+
+class CustomItemSource: NSObject, UIActivityItemSource {
+   func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
+       return "Default text"
+   }
+
+   func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
+       if activityType == .postToTwitter {
+           return "Check out this cool feature!"
+       } else {
+           return "Here is something interesting to share."
+       }
+   }
+
+   func activityViewController(_ activityViewController: UIActivityViewController, subjectForActivityType activityType: UIActivity.ActivityType?) -> String {
+       return "Custom Subject"
+   }
+}
+```
+  ```swift
+     ShareLinkButton(itemSource: CustomItemSource(), label: {
+        Text("Share with Custom Source")
+    })
+    ```
+
 ## License
 This package is licensed under the MIT license. See the LICENSE file for more details.
