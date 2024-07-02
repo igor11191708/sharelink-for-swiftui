@@ -66,12 +66,12 @@ ShareLinkButton(item: URL(string: "https://example.com")!, icon: UIImage(systemN
 
 ### Sharing CLLocation
 ```swift
-        let location = CLLocation(latitude: 37.7749, longitude: -122.4194) // Example coordinates for San Francisco
-        
-        // Create a ShareLinkButton using the defined location.
-        ShareLinkButton(item: location, label: {
-            Text("Share Location")  // This is the label for the button.
-        })}
+let location = CLLocation(latitude: 37.7749, longitude: -122.4194) // Example coordinates for San Francisco
+
+// Create a ShareLinkButton using the defined location.
+ShareLinkButton(item: location, label: {
+    Text("Share Location")  // This is the label for the button.
+})}
 })
 ```
 
@@ -108,11 +108,11 @@ class CustomItemSource: NSObject, UIActivityItemSource {
    }
 }
 ```
-  ```swift
-     ShareLinkButton(itemSource: CustomItemSource(), label: {
-        Text("Share with Custom Source")
-    })
-    ```
+```swift
+ShareLinkButton(itemSource: CustomItemSource(), label: {
+    Text("Share with Custom Source")
+})
+```
 
 ## License
 This package is licensed under the MIT license. See the LICENSE file for more details.
