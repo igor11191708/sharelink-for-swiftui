@@ -80,7 +80,7 @@ The button appearance can be customized via the label closure, allowing integrat
 
 ## Customizing the ShareLinkButton with UIActivityItemSource
 
-The `ShareLinkButton` in SwiftUI allows developers to customize the sharing experience by providing their own `UIActivityItemSource`. This interface enables precise control over the data shared and its format, depending on the activity type selected by the user. By integrating a custom `UIActivityItemSource` into the `ShareLinkButton`, developers can tailor the content and presentation of shared data across various platforms.
+The `ShareLinkButton` in SwiftUI allows developers to customize the sharing experience by providing their own `UIActivityItemSource`. This interface enables precise control over the data shared and its format, depending on the activity type selected by the user.
 
 ### Example: Customizing Share Content Based on Activity Type
 
