@@ -11,6 +11,10 @@ This package provides a SwiftUI view, `ShareLinkButton`, that enables sharing of
 - **Activity Exclusion**: Options to exclude specific activities from the share sheet.
 - **iOS 14+ Compatibility**: Designed to be compatible with iOS 14 and above.
 
+## Example Usage
+
+To see the example code in action, refer to the [ShareLinkButton Example](https://github.com/The-Igor/sharelink-example).
+
 ![ShareLinkButton Example](https://github.com/The-Igor/sharelink-for-swiftui/blob/main/img/sharelink_swiftui.jpeg)
 
 ## API
