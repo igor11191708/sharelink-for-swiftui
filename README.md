@@ -68,16 +68,14 @@ ShareLinkButton(item: URL(string: "https://example.com")!, icon: UIImage(systemN
 ```swift
 let location = CLLocation(latitude: 37.7749, longitude: -122.4194) // Coordinates for San Francisco
 
-// Create a ShareLinkButton using the defined location.
 ShareLinkButton(item: location, label: {
     Text("San Francisco location")  
 })
 ```
 
 ## Customization
-The button appearance can be customized via the label closure, allowing integration with the design system of the host application. Additionally, developers can specify custom activities or exclude certain activity types to tailor the sharing experience to the app's needs.
 
-## Customizing the ShareLinkButton with UIActivityItemSource
+The button appearance can be customized via the label closure, allowing integration with the design system of the host application. Additionally, developers can specify custom activities or exclude certain activity types to tailor the sharing experience to the app's needs.
 
 The `ShareLinkButton` in SwiftUI allows developers to customize the sharing experience by providing their own `UIActivityItemSource`. This interface enables precise control over the data shared and its format, depending on the activity type selected by the user.
 
