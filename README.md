@@ -90,28 +90,48 @@ The `ShareLinkButton` in SwiftUI allows developers to customize the sharing expe
 ```swift
 import UIKit
 
+// Step 1: Create a Custom UIActivityItemSource
 class CustomItemSource: NSObject, UIActivityItemSource {
-   func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
-       return "Default text"
-   }
+    let text: String
+    let url: URL
 
-   func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
-       if activityType == .postToTwitter {
-           return "Check out this cool feature!"
-       } else {
-           return "Here is something interesting to share."
-       }
-   }
+    init(text: String, url: URL) {
+        self.text = text
+        self.url = url
+    }
 
-   func activityViewController(_ activityViewController: UIActivityViewController, subjectForActivityType activityType: UIActivity.ActivityType?) -> String {
-       return "Custom Subject"
-   }
+    func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
+        return text
+    }
+
+    func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
+        return text
+    }
+
+    func activityViewController(_ activityViewController: UIActivityViewController, subjectForActivityType activityType: UIActivity.ActivityType?) -> String {
+        return "Custom Subject"
+    }
+
+    func activityViewController(_ activityViewController: UIActivityViewController, dataTypeIdentifierForActivityType activityType: UIActivity.ActivityType?) -> String? {
+        return "public.url"
+    }
+
+    func activityViewController(_ activityViewController: UIActivityViewController, thumbnailImageForActivityType activityType: UIActivity.ActivityType?, suggestedSize size: CGSize) -> UIImage? {
+        return UIImage(systemName: "link.circle")
+    }
 }
 ```
 ```swift
-ShareLinkButton(itemSource: CustomItemSource(), label: {
-    Text("Share with Custom Source")
-})
+// Step 2: Create an instance of the custom activity item source
+        let source = CustomItemSource(
+            text: "Check out this amazing website!",
+            url: URL(string: "https://www.example.com")!
+        )
+
+// Step 3: Use the custom activity item source in ShareLink
+ShareLink(item: source) {
+    Label("Share", systemImage: "square.and.arrow.up")
+}
 ```
 
 ## License
