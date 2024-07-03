@@ -21,6 +21,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "sharelink-for-swiftui",
-            dependencies: [])
+            dependencies: []),
+        .testTarget(
+            name: "sharelinkTests",
+            dependencies: ["sharelink-for-swiftui"]),
     ]
 )
