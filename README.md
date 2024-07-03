@@ -15,7 +15,7 @@ This package provides a SwiftUI view, `ShareLinkButton`, that enables sharing of
 
 To see the example code in action, refer to the [example](https://github.com/The-Igor/sharelink-for-swiftui-example).
 
-![ShareLinkButton Example](https://github.com/The-Igor/sharelink-for-swiftui/blob/main/img/sharelink.gif)
+![ShareLinkButton Example](https://github.com/The-Igor/sharelink-for-swiftui-example/blob/main/img/sharelink.gif)
 
 ## API
 ### `ShareLinkButton` Struct
