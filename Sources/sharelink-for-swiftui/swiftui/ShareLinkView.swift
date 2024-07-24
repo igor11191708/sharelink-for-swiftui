@@ -4,8 +4,17 @@
 //  Created by Igor Shel on 29.10.2023.
 //
 
+#if canImport(SwiftUI)
 import SwiftUI
+#endif
+
+#if canImport(UIKit)
 import UIKit
+#endif
+
+#if canImport(CoreLocation)
+import CoreLocation
+#endif
 
 /// A SwiftUI view that wraps a `UIActivityViewController` to share data.
 struct ShareLinkView: UIViewControllerRepresentable {

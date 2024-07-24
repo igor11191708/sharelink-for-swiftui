@@ -5,7 +5,9 @@
 //  Created by Igor  on 02.07.24.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 /// Builder class for creating `NSAttributedString` with custom attributes.
 final class AttributedStringBuilder {

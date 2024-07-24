@@ -4,11 +4,20 @@
 //  Created by Igor on 01.07.24.
 //
 
-import UIKit
+#if canImport(SwiftUI)
 import SwiftUI
+#endif
+
+#if canImport(UIKit)
+import UIKit
+#endif
+
+#if canImport(CoreLocation)
 import CoreLocation
+#endif
 
 /// Final builder class for creating transportable items with additional attributes for sharing.
+@MainActor
 final class TransportableItemBuilder<T: Transportable> {
     
     /// The item to be shared, conforming to the `Transportable` protocol.
@@ -149,6 +158,7 @@ fileprivate func resolveTitle<T: Transportable>(item: T, title: String?) -> Stri
 ///   - item: The item to be printed, conforming to the `Transportable` protocol.
 ///   - resolvedTitle: The resolved title for the item.
 /// - Returns: A `UISimpleTextPrintFormatter` configured with the provided item and title.
+@MainActor
 fileprivate func createStringFormatter<T: Transportable>(item: T, resolvedTitle: String) -> UISimpleTextPrintFormatter {
     switch item {
     case let item as String:

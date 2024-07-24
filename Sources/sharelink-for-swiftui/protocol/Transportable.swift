@@ -4,8 +4,13 @@
 //  Created by Igor on 01.07.24.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
+
+#if canImport(CoreLocation)
 import CoreLocation
+#endif
 
 /// Protocol `Transportable` inherits `CustomStringConvertible` for providing textual descriptions of objects.
 /// This protocol and its extensions are available only on iOS and available since iOS 14.

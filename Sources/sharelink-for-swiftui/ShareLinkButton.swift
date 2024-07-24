@@ -5,10 +5,13 @@
 //  Created by Igor on 29.10.2023.
 //
 
+#if canImport(SwiftUI)
 import SwiftUI
+#endif
 
 /// A SwiftUI view that provides a button to share data using `UIActivityViewController`.
 @available(iOS 14.0, *)
+@MainActor
 public struct ShareLinkButton<Label: View>: View {
     
     /// State to control the presentation of the share sheet.

@@ -4,7 +4,9 @@
 //  Created by Igor on 01.07.24.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 /// Creates a `UISimpleTextPrintFormatter` for printing a string with a title.
 ///
@@ -12,6 +14,7 @@ import UIKit
 ///   - value: The string to be printed.
 ///   - title: The title to be displayed above the string.
 /// - Returns: A `UISimpleTextPrintFormatter` configured with the provided string and title.
+@MainActor
 func printStringFormatter(_ value: String, _ title: String) -> UISimpleTextPrintFormatter {
     // Create attributed string for title using the builder
     let titleStr = AttributedStringBuilder()
@@ -38,6 +41,7 @@ func printStringFormatter(_ value: String, _ title: String) -> UISimpleTextPrint
 ///
 /// - Parameter value: The image to be printed.
 /// - Returns: A `UIViewPrintFormatter` configured with the provided image.
+@MainActor
 func printImageFormatter(_ value: UIImage) -> UIViewPrintFormatter {
     return UIImageView(image: value).viewPrintFormatter()
 }

@@ -5,7 +5,9 @@
 //  Created by Igor Shel on 29.10.2023.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 /// A custom `UIActivityViewController` subclass that customizes the presentation of the activity sheet.
 final class ActivitySheetController: UIActivityViewController {

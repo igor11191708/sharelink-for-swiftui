@@ -3,8 +3,13 @@
 //
 //  Created by Igor Shel on 29.10.2023.
 
+#if canImport(UIKit)
 import UIKit
+#endif
+
+#if canImport(LinkPresentation)
 import LinkPresentation
+#endif
 
 /// A class that conforms to `UIActivityItemSource` to provide transportable items for sharing activities.
 final class TransportableItem<T: Transportable>: NSObject, UIActivityItemSource {
