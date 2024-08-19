@@ -1,11 +1,11 @@
 
-# ShareLink iOS14 for SwiftUI Package
+# ShareLink iOS14 for SwiftUI
 
 This package provides a SwiftUI view, `ShareLinkButton`, that enables sharing of various data types. 
 
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FThe-Igor%2Fsharelink-for-swiftui%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/The-Igor/sharelink-for-swiftui) [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FThe-Igor%2Fsharelink-for-swiftui%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/The-Igor/sharelink-for-swiftui)
 
-## Why ShareLink when we have Apple's ShareLink out of the box?!
+## Why I developed the ShareLink package when Apple provides one out of the box?!
 
 In my experience working on SwiftUI projects, I noticed a gap when it came to implementing share link functionalities across different iOS versions. While Apple introduced the ShareLink API in iOS 16, a significant portion of users and projects are still on older versions, like iOS 15 and even iOS 14. Given that many apps need to support these earlier versions for at least a couple more years. This necessity led me to develop a package that provides similar functionality as ShareLink but is compatible with earlier iOS versions. 
 
