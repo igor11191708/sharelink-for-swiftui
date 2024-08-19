@@ -1,7 +1,7 @@
 //
 //  TransportableItem.swift
 //
-//  Created by Igor Shel on 29.10.2023.
+//  Created by Igor Shelopaev on 29.10.2023.
 
 #if canImport(UIKit)
 import UIKit
@@ -22,6 +22,21 @@ final class TransportableItem<T: Transportable>: NSObject, UIActivityItemSource 
     /// An optional icon for the item.
     private let icon: UIImage?
 
+    /// Provides a getter for the item to be shared.
+    var getItem: T {
+        return item
+    }
+    
+    /// Provides a getter for the title.
+    var getTitle: String? {
+        return title
+    }
+    
+    /// Provides a getter for the icon.
+    var getIcon: UIImage? {
+        return icon
+    }
+    
     /// Initializes a new transportable item with optional title and icon.
     ///
     /// - Parameters:

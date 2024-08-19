@@ -2,7 +2,7 @@
 //  ShareLinkButtonTests.swift
 //
 //
-//  Created by Igor  on 03.07.24.
+//  Created by Igor Shelopaev on 03.07.24.
 //
 
 import XCTest
