@@ -2,7 +2,7 @@
 //  AttributedStringBuilder.swift
 //
 //
-//  Created by Igor  on 02.07.24.
+//  Created by Igor Shelopaev on 02.07.24.
 //
 
 #if canImport(UIKit)

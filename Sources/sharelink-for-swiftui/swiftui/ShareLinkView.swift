@@ -1,7 +1,7 @@
 //
 //  ShareLinkView.swift
 //
-//  Created by Igor Shel on 29.10.2023.
+//  Created by Igor Shelopaev on 29.10.2023.
 //
 
 #if canImport(SwiftUI)

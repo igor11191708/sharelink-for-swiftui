@@ -1,7 +1,7 @@
 //
 //  TransportableItemBuilder.swift
 //
-//  Created by Igor on 01.07.24.
+//  Created by Igor Shelopaev on 01.07.24.
 //
 
 #if canImport(SwiftUI)
