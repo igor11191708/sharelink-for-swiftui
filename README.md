@@ -9,7 +9,7 @@ This package provides a SwiftUI view, `ShareLinkButton`, that enables sharing of
 
 In my experience working on SwiftUI projects, I noticed a gap when it came to implementing share link functionalities across different iOS versions. While Apple introduced the ShareLink API in iOS 16, a significant portion of users and projects are still on older versions, like iOS 15 and even iOS 14. Given that many apps need to support these earlier versions for at least a couple more years. This necessity led me to develop a package that provides similar functionality as ShareLink but is compatible with earlier iOS versions. 
 
-## [SwiftUI example](https://github.com/swiftuiux/sharelink-for-swiftui-example).
+## [SwiftUI example](https://github.com/swiftuiux/sharelink-for-swiftui-example)
 
 ## Features
 - **Customizable Button Label**: The label of the button is fully customizable with SwiftUI views.
