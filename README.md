@@ -3,7 +3,7 @@
 
 This package provides a SwiftUI view, `ShareLinkButton`, that enables sharing of various data types. 
 
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Figor11191708%2Fsharelink-for-swiftui%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/igor11191708/sharelink-for-swiftui)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fswiftuiux%2Fsharelink-for-swiftui%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/swiftuiux/sharelink-for-swiftui)
 
 ## Why I developed the ShareLink package when Apple provides one out of the box?!
 
@@ -18,9 +18,9 @@ In my experience working on SwiftUI projects, I noticed a gap when it came to im
 
 ## Example Usage
 
-To see the example code in action, refer to the [example](https://github.com/The-Igor/sharelink-for-swiftui-example).
+To see the example code in action, refer to the [example](https://github.com/swiftuiux/sharelink-for-swiftui-example).
 
-![ShareLinkButton Example](https://github.com/The-Igor/sharelink-for-swiftui-example/blob/main/img/sharelink%20.gif)
+![ShareLinkButton Example](https://github.com/swiftuiux/sharelink-for-swiftui-example/blob/main/img/sharelink%20.gif)
 
 ## API
 ### `ShareLinkButton` Struct
