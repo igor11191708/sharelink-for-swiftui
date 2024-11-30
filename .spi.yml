@@ -1,4 +1,4 @@
 version: 1
 builder:
   configs:
-    - documentation_targets: [sharelink-for-swiftui]
+    - documentation_targets: [sharelink-swiftui-ios]
